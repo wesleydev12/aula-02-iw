@@ -1,0 +1,133 @@
+
+
+    <!-- <table border=""
+        O NOME DA TAG VEM NA FRENTE "ESPAÇO" E OS OUTROS ATRIBUTOS-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+        <style>
+
+
+
+
+        </style>
+    </head>
+    <body style="background-color: cadetblue;">
+        <div style="text-align: center;">
+        <h1>Tipos de entrada de dados</h1>
+        <hr>
+        <form action="">
+            <label for="nome">Nome completo*</label>
+                <br>
+                <input id="nome" type="text" required>
+                <br>
+            <label for="senha">Cadastrar Senha*</label>
+                <br>
+                <input id="senha" title="8 caracteres" type="password" required minlength="8">
+                <br>
+            <label for="e-mail">E-mail</label>
+                <br>
+                <input id="e-mail" title="Digite seu email" type="email">
+                <br>
+            <label for="idade">Idade</label>
+                <br>
+                <input id="idade" type="number" min="0" max="100">
+            <br>
+            <label for="nascimento">Data de nascimento</label>
+            <br>
+            <input id="nascimento" title="Data de nascimento" type="date" min="0" max="100">
+            <br>
+            <label for="hora">Hora</label>
+            <br>
+            <input id="hora" type="time">
+            <br>
+            <label for="instagram">Informe seu instagram</label>
+            <br>
+            <input id="instagram" type="url" title="https://instagram">
+            <br><br>
+            <label for="cor">Cor</label>
+            <input type="color" id="cor">
+            <br>
+            <br><br>
+            <button title="Clique aqui para enviar os dados!" style="background-color: blue; border: 1px blue;">Enviar</button>
+            <!--FOR tem que ter o mesmo de ID valor dentro das "" 
+             EXEMPLO À CIMA-->
+            <hr>
+            <br>
+            <h2>Você usa qual sistema operacional</h2>
+            <br>
+            <label for="windows">Windows</label>
+            <input type="radio" name="so" id="windows">
+            <label for="linux">GNU Linux</label>
+            <input type="radio" name="so" id="linux">
+            <label for="macos">macOS</label>
+            <input type="radio" name="so" id="macos">
+            <hr>
+            <br><br>
+            <fieldset>
+                <legend>Quais seus estilos musicais?</legend>
+                <label for="forro">Forró</label>
+                <input type="checkbox" id="forro">
+                </legend>
+                <label for="poprock">Pop Rock</label>
+                <input type="checkbox" id="poprock">
+                </legend>
+                <label for="raggae">Raggae</label>
+                <input type="checkbox" id="raggae">
+                </legend>
+                <label for="piseiro">Piseiro</label>
+                <input type="checkbox" id="piseiro">
+            </fieldset>
+            <br>
+            <hr>
+            <h2>Upload envie sua foto</h2>
+            <label for="curriculo">Clique aqui para enviar seu currículo</label>
+            <input type="file" id="curriculo">
+            <br><br>
+            <hr>
+            <h2>Avalie o curso iwTRAINING</h2>
+            <label for="barra-de-satisfacao">Avalie o curso</label>
+            <input type="range" min="0" max="10" id="barra-de-satisfacao" step="1">10
+            <!-- SÓ DA PARA MOSTRAR O NÚMERO NA BARRA COM JAVA SCREPT-->
+            <br><br>
+            <hr>
+            <h2>Digite aqui</h2>
+            <label for="msg">Digite aqui</label>
+            <textarea id="msg" placeholder="Digite aqui" cols="30" rows="10"></textarea>
+            <hr>
+            <br><br>
+            <h2>Escolha sua cidade</h2>
+            <label for="cidade">Escolha sua cidade</label>
+            <select name="" id="">
+                <option selected disabled>-- Selected --</option>
+                <optgroup label="Ceará">
+                <option>Fortaleza</option>
+                <option>Caucaia</option>
+                <option>Maracanaú</option>
+            </optgroup>
+                <optgroup label="Minas Gerais">
+                    <option>Belo Horizonte</option>
+                    <option>Ouro Preto</option>
+                    <option>Fortaleza de Minas</option>
+                    </optgroup>
+                <optgroup label="São Paulo">
+                    <option>São Paulo</option>
+                    <option>Campinas</option>
+                    <option>Ribeirão Preto</option>
+                    <option>Guarulhos</option>
+                </optgroup>    
+            </select>
+            <hr>
+            <br><br><br>
+            <h2>Resete dos dados preenchidos</h2>
+            <p>Clique aqui</p>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    </body>
+</html>
